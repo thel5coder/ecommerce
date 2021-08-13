@@ -2,11 +2,11 @@ package usecases
 
 import (
 	"errors"
-	"github.com/ecommerce-service/user-service/domain/models"
-	"github.com/ecommerce-service/user-service/domain/requests"
-	"github.com/ecommerce-service/user-service/domain/usecase"
-	"github.com/ecommerce-service/user-service/domain/view_models"
-	"github.com/ecommerce-service/user-service/repository/queries"
+	"github.com/ecommerce/user-service/domain/models"
+	"github.com/ecommerce/user-service/domain/requests"
+	"github.com/ecommerce/user-service/domain/usecase"
+	"github.com/ecommerce/user-service/domain/view_models"
+	"github.com/ecommerce/user-service/repository/queries"
 	"github.com/thel5coder/pkg/functioncaller"
 	"github.com/thel5coder/pkg/hashing"
 	"github.com/thel5coder/pkg/logruslogger"

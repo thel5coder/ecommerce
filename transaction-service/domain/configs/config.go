@@ -34,6 +34,7 @@ func NewConfig() *Config {
 	return &Config{}
 }
 
+//SetDBConnection connection to postgresql database
 func (c *Config) SetDBConnection() *Config {
 	config := postgresql.NewConfig(os.Getenv("DB_HOST"), os.Getenv("DB_NAME"), os.Getenv("DB_USER_NAME"),
 		os.Getenv("DB_PASSWORD"), os.Getenv("DB_PORT"), os.Getenv("DB_TIME_ZONE"), os.Getenv("DB_SSL_MODE"),
@@ -45,18 +46,21 @@ func (c *Config) SetDBConnection() *Config {
 	return c
 }
 
+//SetRedisConnection set redis connection
 func (c *Config) SetRedisConnection() *Config {
 	c.Redis = redis.NewConnection(os.Getenv("REDIS_HOST"), os.Getenv("REDIS_PASSWORD")).Connect()
 
 	return c
 }
 
+//SetJwe set jwe configuration jwe key location and passphrase for key location
 func (c *Config) SetJwe() *Config {
 	c.Jwe = jwe.NewJwe(os.Getenv("JWE_KEY_LOCATION"),os.Getenv("JWE_PASSPHRASE"))
 
 	return c
 }
 
+//SetJwt set jwt configuration for secret and expired time
 func (c *Config) SetJwt() *Config {
 	c.Jwt = jwt.NewJwt(os.Getenv("SECRET"),os.Getenv("SECRET_REFRESH_TOKEN"),
 		str.StringToInt(os.Getenv("TOKEN_EXP_TIME")),str.StringToInt(os.Getenv("REFRESH_TOKEN_EXP_TIME")))
@@ -64,6 +68,7 @@ func (c *Config) SetJwt() *Config {
 	return c
 }
 
+//SetValidator configuration locale for validator
 func (c *Config) SetValidator() *Config {
 	c.Validator = validator.NewValidator(os.Getenv("APP_LOCALE")).SetValidator().SetTranslator()
 

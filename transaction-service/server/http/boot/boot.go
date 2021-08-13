@@ -1,7 +1,7 @@
 package boot
 
 import (
-	"github.com/ecommerce-service/transaction-service/domain/configs"
+	"github.com/ecommerce/transaction-service/domain/configs"
 	"github.com/gofiber/fiber/v2"
 )
 

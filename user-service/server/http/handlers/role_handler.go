@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"github.com/ecommerce-service/user-service/domain/handlers"
-	"github.com/ecommerce-service/user-service/usecases"
+	"github.com/ecommerce/user-service/domain/handlers"
+	"github.com/ecommerce/user-service/usecases"
 	"github.com/gofiber/fiber/v2"
 	"github.com/thel5coder/pkg/response"
 	"net/http"

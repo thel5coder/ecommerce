@@ -2,8 +2,8 @@ package queries
 
 import (
 	"database/sql"
-	"github.com/ecommerce-service/user-service/domain/models"
-	"github.com/ecommerce-service/user-service/domain/queries"
+	"github.com/ecommerce/user-service/domain/models"
+	"github.com/ecommerce/user-service/domain/queries"
 	"strings"
 )
 

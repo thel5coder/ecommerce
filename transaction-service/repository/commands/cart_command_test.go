@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/brianvoe/gofakeit/v6"
-	"github.com/ecommerce-service/transaction-service/domain/models"
+	"github.com/ecommerce/transaction-service/domain/models"
 	"github.com/stretchr/testify/assert"
 	"github.com/thel5coder/pkg/postgresql"
 	"testing"
@@ -25,7 +25,7 @@ func TestAddCart(t *testing.T) {
 		SetProductId(gofakeit.UUID()).
 		SetName(gofakeit.Name()).
 		SetSku(gofakeit.UUID()).
-		SetCategory("{\n\t\tType:     \"Ini jso\",\n\t\tRowCount: 0,\n\t\tFields:   nil,\n\t\tIndent:   false,\n\t}").
+		SetCategory("").
 		SetPrice(gofakeit.Price(100000000, 150000000)).
 		SetQuantity(gofakeit.Int64()).
 		SetSubTotal(gofakeit.Price(100000000, 150000000)).

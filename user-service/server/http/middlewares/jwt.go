@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/dgrijalva/jwt-go"
-	"github.com/ecommerce-service/user-service/usecases"
+	"github.com/ecommerce/user-service/usecases"
 	"github.com/gofiber/fiber/v2"
 	"github.com/thel5coder/pkg/functioncaller"
 	jwtPkg "github.com/thel5coder/pkg/jwt"

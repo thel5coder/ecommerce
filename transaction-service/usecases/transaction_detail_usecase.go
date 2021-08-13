@@ -1,10 +1,10 @@
 package usecases
 
 import (
-	"github.com/ecommerce-service/transaction-service/domain/models"
-	"github.com/ecommerce-service/transaction-service/domain/requests"
-	"github.com/ecommerce-service/transaction-service/domain/usecases"
-	"github.com/ecommerce-service/transaction-service/repository/commands"
+	"github.com/ecommerce/transaction-service/domain/models"
+	"github.com/ecommerce/transaction-service/domain/requests"
+	"github.com/ecommerce/transaction-service/domain/usecases"
+	"github.com/ecommerce/transaction-service/repository/commands"
 	"github.com/thel5coder/pkg/functioncaller"
 	"github.com/thel5coder/pkg/logruslogger"
 	"time"

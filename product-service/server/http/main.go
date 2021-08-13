@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/ecommerce-service/product-service/domain/configs"
-	bootApp "github.com/ecommerce-service/product-service/server/http/boot"
+	"github.com/ecommerce/product-service/domain/configs"
+	bootApp "github.com/ecommerce/product-service/server/http/boot"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/gofiber/fiber/v2/middleware/logger"
@@ -25,7 +25,8 @@ func main() {
 		log.Fatal(err)
 	}
 
-	//load config
+	//load config from config function
+	//it set postgresql connection,redis connection,set validator, set jwe configuration, set jwt configuration and set min.io connection
 	config := configs.NewConfig().SetRedisConnection().SetValidator().SetJwe().SetJwt().SetDBConnection().SetMinioConnection()
 	db, err := config.DB.Connect()
 	if err != nil {

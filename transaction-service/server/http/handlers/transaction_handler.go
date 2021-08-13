@@ -1,9 +1,9 @@
 package handlers
 
 import (
-	"github.com/ecommerce-service/transaction-service/domain/handlers"
-	"github.com/ecommerce-service/transaction-service/domain/requests"
-	"github.com/ecommerce-service/transaction-service/usecases"
+	"github.com/ecommerce/transaction-service/domain/handlers"
+	"github.com/ecommerce/transaction-service/domain/requests"
+	"github.com/ecommerce/transaction-service/usecases"
 	"github.com/go-playground/validator/v10"
 	"github.com/gofiber/fiber/v2"
 	"github.com/thel5coder/pkg/response"

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/ecommerce-service/transaction-service/domain/configs"
-	bootApp "github.com/ecommerce-service/transaction-service/server/http/boot"
+	"github.com/ecommerce/transaction-service/domain/configs"
+	bootApp "github.com/ecommerce/transaction-service/server/http/boot"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/gofiber/fiber/v2/middleware/logger"

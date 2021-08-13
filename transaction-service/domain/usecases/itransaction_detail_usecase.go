@@ -1,6 +1,8 @@
 package usecases
 
-import "github.com/ecommerce-service/transaction-service/domain/requests"
+import (
+	"github.com/ecommerce/transaction-service/domain/requests"
+)
 
 type ITransactionDetailUseCase interface {
 

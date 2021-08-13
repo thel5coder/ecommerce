@@ -2,7 +2,7 @@ package commands
 
 import (
 	"database/sql"
-	"github.com/ecommerce-service/transaction-service/domain/models"
+	"github.com/ecommerce/transaction-service/domain/models"
 )
 
 type TransactionCommandMock struct {

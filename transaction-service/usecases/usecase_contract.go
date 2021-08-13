@@ -1,8 +1,8 @@
 package usecases
 
 import (
-	"github.com/ecommerce-service/transaction-service/domain/configs"
-	"github.com/ecommerce-service/transaction-service/domain/view_models"
+	"github.com/ecommerce/transaction-service/domain/configs"
+	"github.com/ecommerce/transaction-service/domain/view_models"
 )
 
 type UseCaseContract struct {

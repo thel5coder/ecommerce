@@ -1,6 +1,6 @@
 package view_models
 
-import "github.com/ecommerce-service/user-service/domain/models"
+import "github.com/ecommerce/user-service/domain/models"
 
 type RoleVm struct {
 	ID   int64  `json:"id"`

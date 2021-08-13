@@ -1,8 +1,8 @@
 package usecase
 
 import (
-	"github.com/ecommerce-service/user-service/domain/requests"
-	"github.com/ecommerce-service/user-service/domain/view_models"
+	"github.com/ecommerce/user-service/domain/requests"
+	"github.com/ecommerce/user-service/domain/view_models"
 )
 
 type IAuthenticationUseCase interface {

@@ -1,9 +1,9 @@
 package boot
 
 import (
-	"github.com/ecommerce-service/user-service/server/http/boot/routers"
-	"github.com/ecommerce-service/user-service/server/http/handlers"
-	"github.com/ecommerce-service/user-service/usecases"
+	"github.com/ecommerce/user-service/server/http/boot/routers"
+	"github.com/ecommerce/user-service/server/http/handlers"
+	"github.com/ecommerce/user-service/usecases"
 	"github.com/gofiber/fiber/v2"
 	"github.com/rs/xid"
 )

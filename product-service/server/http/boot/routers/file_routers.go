@@ -1,8 +1,8 @@
 package routers
 
 import (
-	"github.com/ecommerce-service/product-service/server/http/handlers"
-	"github.com/ecommerce-service/product-service/server/http/middlewares"
+	"github.com/ecommerce/product-service/server/http/handlers"
+	"github.com/ecommerce/product-service/server/http/middlewares"
 	"github.com/gofiber/fiber/v2"
 )
 
@@ -11,6 +11,7 @@ type FileRouters struct {
 	Handler    handlers.HandlerContract
 }
 
+//NewFileRouters function to initialize new routers
 func NewFileRouters(routeGroup fiber.Router, handler handlers.HandlerContract) IRouters {
 	return &FileRouters{
 		RouteGroup: routeGroup,
@@ -18,12 +19,21 @@ func NewFileRouters(routeGroup fiber.Router, handler handlers.HandlerContract) I
 	}
 }
 
+//RegisterRouter register category routers
 func (r FileRouters) RegisterRouter() {
+	//initialize the file handler
 	handler := handlers.NewFileHandler(r.Handler)
+
+	//initialize jwt middleware
 	jwt := middlewares.NewJwtMiddleware(r.Handler.UseCaseContract)
 
+	//creating file routing group
 	fileRouters := r.RouteGroup.Group("/file")
+
+	//secure the route with jwt middleware
 	fileRouters.Use(jwt.Use)
+
+	//routing
 	fileRouters.Get("/:key", handler.GetUrlByKey)
 	fileRouters.Post("", handler.Upload)
 }

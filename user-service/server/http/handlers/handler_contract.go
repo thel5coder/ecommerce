@@ -1,7 +1,7 @@
 package handlers
 
 import (
-	"github.com/ecommerce-service/user-service/usecases"
+	"github.com/ecommerce/user-service/usecases"
 	"github.com/gofiber/fiber/v2"
 )
 
