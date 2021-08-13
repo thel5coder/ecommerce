@@ -1,8 +1,8 @@
 package routers
 
 import (
-	"github.com/ecommerce-service/product-service/server/http/handlers"
-	"github.com/ecommerce-service/product-service/server/http/middlewares"
+	"github.com/ecommerce/product-service/server/http/handlers"
+	"github.com/ecommerce/product-service/server/http/middlewares"
 	"github.com/gofiber/fiber/v2"
 )
 
@@ -18,6 +18,7 @@ func NewCategoryRouters(routeGroup fiber.Router, handler handlers.HandlerContrac
 	}
 }
 
+//RegisterRouter register category routers
 func (r CategoryRouters) RegisterRouter() {
 	handler := handlers.NewCategoryHandler(r.Handler)
 	jwt := middlewares.NewJwtMiddleware(r.Handler.UseCaseContract)
