@@ -1,6 +1,6 @@
 package view_models
 
-import "github.com/ecommerce-service/product-service/domain/models"
+import "github.com/ecommerce/product-service/domain/models"
 
 type CategoryVm struct {
 	ID   string `json:"id"`

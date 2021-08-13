@@ -1,8 +1,8 @@
 package usecase
 
 import (
-	"github.com/ecommerce-service/product-service/domain/requests"
-	"github.com/ecommerce-service/product-service/domain/view_models"
+	"github.com/ecommerce/product-service/domain/requests"
+	"github.com/ecommerce/product-service/domain/view_models"
 )
 
 type ICategoryUseCase interface {

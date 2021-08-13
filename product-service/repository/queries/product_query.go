@@ -1,8 +1,8 @@
 package queries
 
 import (
-	"github.com/ecommerce-service/product-service/domain/models"
-	"github.com/ecommerce-service/product-service/domain/queries"
+	"github.com/ecommerce/product-service/domain/models"
+	"github.com/ecommerce/product-service/domain/queries"
 	"github.com/thel5coder/pkg/postgresql"
 	"strings"
 )
@@ -11,10 +11,12 @@ type ProductQuery struct {
 	db postgresql.IConnection
 }
 
+// NewProductQuery initializatio n for new command product
 func NewProductQuery(db postgresql.IConnection) queries.IProductQuery {
 	return ProductQuery{db: db}
 }
 
+//Browse query to select data from products table with order,search,and limit offset
 func (q ProductQuery) Browse(search, orderBy, sort, category string, limit, offset int) (interface{}, error) {
 	var res []*models.Product
 	queryParams := []interface{}{"%" + strings.ToLower(search) + "%", limit, offset}
@@ -42,6 +44,7 @@ func (q ProductQuery) Browse(search, orderBy, sort, category string, limit, offs
 	return res, nil
 }
 
+//ReadBy query to select from products table and filter by specific column by parameters
 func (q ProductQuery) ReadBy(column, operator string, value interface{}) (interface{}, error) {
 	statement := models.ProductDetailSelectStatement + ` ` + models.ProductJoinSelectStatement + ` ` + models.ProductJoinDetailSelectStatement + ` ` +
 		models.ProductDefaultWhereStatement + ` AND ` + column + `` + operator + `$1 `+models.ProductGroupByStatement
@@ -55,6 +58,7 @@ func (q ProductQuery) ReadBy(column, operator string, value interface{}) (interf
 	return res, nil
 }
 
+//Count query to select count all data from products table with filter
 func (q ProductQuery) Count(search, category string) (res int, err error) {
 	queryParams := []interface{}{"%" + strings.ToLower(search) + "%"}
 	optionalWhereStatement := ``
@@ -73,6 +77,7 @@ func (q ProductQuery) Count(search, category string) (res int, err error) {
 	return res, nil
 }
 
+//CountBy query to select count from products table by specific column by parameters
 func (q ProductQuery) CountBy(column, operator, id string, value interface{}) (res int, err error) {
 	whereStatement := models.ProductDefaultWhereStatement + ` AND ` + column + `` + operator + `$1`
 	whereParams := []interface{}{value}

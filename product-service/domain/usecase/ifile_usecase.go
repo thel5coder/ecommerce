@@ -1,7 +1,7 @@
 package usecase
 
 import (
-	"github.com/ecommerce-service/product-service/domain/view_models"
+	"github.com/ecommerce/product-service/domain/view_models"
 	"mime/multipart"
 )
 

@@ -8,4 +8,5 @@ type ProductRequest struct {
 	Discount      float64  `json:"discount"`
 	MainImage     string   `json:"main_image"`
 	ProductImages []string `json:"product_images"`
+	Stock         int      `json:"stock"`
 }

@@ -1,7 +1,7 @@
 package view_models
 
 import (
-	"github.com/ecommerce-service/product-service/domain/models"
+	"github.com/ecommerce/product-service/domain/models"
 	"time"
 )
 

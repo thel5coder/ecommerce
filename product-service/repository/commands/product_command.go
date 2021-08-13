@@ -1,8 +1,8 @@
 package commands
 
 import (
-	"github.com/ecommerce-service/product-service/domain/commands"
-	"github.com/ecommerce-service/product-service/domain/models"
+	"github.com/ecommerce/product-service/domain/commands"
+	"github.com/ecommerce/product-service/domain/models"
 	"github.com/thel5coder/pkg/postgresql"
 )
 
@@ -11,6 +11,7 @@ type ProductCommand struct {
 	model *models.Product
 }
 
+// NewProductCommand initialization for new command product
 func NewProductCommand(db postgresql.IConnection, model *models.Product) commands.IProductCommand {
 	return &ProductCommand{
 		db:    db,
@@ -18,6 +19,7 @@ func NewProductCommand(db postgresql.IConnection, model *models.Product) command
 	}
 }
 
+//Add query to insert into products table
 func (c ProductCommand) Add() (res string, err error) {
 	statement := `INSERT INTO products(category_id,name,sku,price,discount,stock,main_image_key,created_at,updated_at) VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9) RETURNING id`
 
@@ -30,6 +32,7 @@ func (c ProductCommand) Add() (res string, err error) {
 	return res, nil
 }
 
+//Edit query to update products table
 func (c ProductCommand) Edit() (err error) {
 	statement := `UPDATE products SET category_id=$1,name=$2,sku=$3,price=$4,discount=$5,stock=$6,main_image_key=$7,updated_at=$8 WHERE id=$9 RETURNING id`
 
@@ -42,6 +45,7 @@ func (c ProductCommand) Edit() (err error) {
 	return nil
 }
 
+//Delete query to delete data in the products table
 func (c ProductCommand) Delete() (err error) {
 	statement := `UPDATE products SET updated_at=$1,deleted_at=$2 WHERE id=$3`
 

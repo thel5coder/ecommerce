@@ -1,8 +1,8 @@
 package commands
 
 import (
-	"github.com/ecommerce-service/product-service/domain/commands"
-	"github.com/ecommerce-service/product-service/domain/models"
+	"github.com/ecommerce/product-service/domain/commands"
+	"github.com/ecommerce/product-service/domain/models"
 	"github.com/thel5coder/pkg/postgresql"
 )
 
@@ -11,6 +11,7 @@ type CategoryCommand struct {
 	model *models.Category
 }
 
+// NewCategoryCommand initialization for new command category
 func NewCategoryCommand(db postgresql.IConnection, model *models.Category) commands.ICategoryCommand {
 	return &CategoryCommand{
 		db:    db,
@@ -18,6 +19,7 @@ func NewCategoryCommand(db postgresql.IConnection, model *models.Category) comma
 	}
 }
 
+//Add query to insert into categories table
 func (c CategoryCommand) Add() (res string, err error) {
 	statement := `INSERT INTO categories (name,slug,created_at,updated_at) VALUES ($1,$2,$3,$4) RETURNING id`
 
@@ -29,6 +31,7 @@ func (c CategoryCommand) Add() (res string, err error) {
 	return res, nil
 }
 
+//Edit query to update categories table
 func (c CategoryCommand) Edit() (res string, err error) {
 	statement := `UPDATE categories SET name=$1,slug=$2,updated_at=$3 WHERE id=$4 RETURNING id`
 
@@ -40,6 +43,7 @@ func (c CategoryCommand) Edit() (res string, err error) {
 	return res, nil
 }
 
+//Delete query to update categories table
 func (c CategoryCommand) Delete() (res string, err error) {
 	statement := `UPDATE categories SET updated_at=$1,deleted_at=$2 WHERE id=$3 RETURNING id`
 
