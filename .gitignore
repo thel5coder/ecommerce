@@ -1,0 +1,10 @@
+/.idea/
+/user-service/.env
+/user-service/dbconfig.yml
+/user-service/vendor
+/product-service/.env
+/product-service/dbconfig.yml
+/product-service/vendor
+/transaction-service/.env
+/transaction-service/dbconfig.yml
+/transaction-service/vendor
