@@ -8,3 +8,5 @@
 /transaction-service/.env
 /transaction-service/dbconfig.yml
 /transaction-service/vendor
+/infra/postgresql-data
+/infra/redis-data

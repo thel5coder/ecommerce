@@ -1,9 +1,9 @@
 package routers
 
 import (
-	"github.com/ecommerce/product-service/server/http/handlers"
-	"github.com/ecommerce/product-service/server/http/middlewares"
 	"github.com/gofiber/fiber/v2"
+	"github.com/thel5coder/ecommerce/product-service/server/http/handlers"
+	"github.com/thel5coder/ecommerce/product-service/server/http/middlewares"
 )
 
 type CategoryRouters struct {

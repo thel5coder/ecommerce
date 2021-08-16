@@ -11,7 +11,7 @@ COPY . $PKG_PATH/
 
 RUN echo $PWD
 
-WORKDIR $PKG_PATH/user-service/server/http/
+WORKDIR $PKG_PATH/product-service/server/http/
 RUN echo $PWD
 
 RUN go build main.go

@@ -2,7 +2,7 @@ package commands
 
 import (
 	"database/sql"
-	"github.com/ecommerce-service/user-service/domain/models"
+	"github.com/thel5coder/ecommerce/user-service/domain/models"
 )
 
 type UserCommandMock struct {

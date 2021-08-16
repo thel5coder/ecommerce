@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  psql:
+    container_name: psql
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: v1d14ry4
+      POSTGRES_USER: postgres
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./postgresql-data:/var/lib/postgresql/data
+    networks:
+      - ecommerce-net
+
+  redis:
+    container_name: redis
+    image: bitnami/redis
+    restart: always
+    environment:
+      REDIS_PASSWORD: redis123
+    ports:
+      - "6380:6379"
+    networks:
+      - ecommerce-net
+    volumes:
+      - ./redis-data:/bitnami/redis/data
+
+networks:
+  ecommerce-net:
+    external: true

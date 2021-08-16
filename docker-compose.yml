@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+  product-services:
+    container_name: product-service
+    build:
+      context: .
+      dockerfile: product-service/Dockerfile
+    restart: always
+    ports:
+      - "3000:3000"
+    networks:
+      - ecommerce-net
+
+  user-services:
+    container_name: user-service
+    build:
+      context: .
+      dockerfile: user-service/Dockerfile
+    restart: always
+    ports:
+      - "3001:3000"
+    networks:
+      - ecommerce-net
+
+  transaction-services:
+    container_name: transaction-service
+    build:
+      context: .
+      dockerfile: transaction-service/Dockerfile
+    restart: always
+    ports:
+      - "3002:3000"
+    networks:
+      - ecommerce-net
+
+networks:
+  ecommerce-net:
+    external: true

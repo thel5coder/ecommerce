@@ -1,9 +1,9 @@
 package usecases
 
 import (
-	"github.com/ecommerce/product-service/domain/models"
-	"github.com/ecommerce/product-service/domain/usecase"
-	productImageCmd "github.com/ecommerce/product-service/repository/commands"
+	"github.com/thel5coder/ecommerce/product-service/domain/models"
+	"github.com/thel5coder/ecommerce/product-service/domain/usecase"
+	productImageCmd "github.com/thel5coder/ecommerce/product-service/repository/commands"
 	"github.com/thel5coder/pkg/functioncaller"
 	"github.com/thel5coder/pkg/logruslogger"
 )

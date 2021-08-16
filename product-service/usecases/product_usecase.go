@@ -1,12 +1,12 @@
 package usecases
 
 import (
-	"github.com/ecommerce/product-service/domain/models"
-	"github.com/ecommerce/product-service/domain/requests"
-	"github.com/ecommerce/product-service/domain/usecase"
-	"github.com/ecommerce/product-service/domain/view_models"
-	"github.com/ecommerce/product-service/repository/commands"
-	"github.com/ecommerce/product-service/repository/queries"
+	"github.com/thel5coder/ecommerce/product-service/domain/models"
+	"github.com/thel5coder/ecommerce/product-service/domain/requests"
+	"github.com/thel5coder/ecommerce/product-service/domain/usecase"
+	"github.com/thel5coder/ecommerce/product-service/domain/view_models"
+	"github.com/thel5coder/ecommerce/product-service/repository/commands"
+	"github.com/thel5coder/ecommerce/product-service/repository/queries"
 	"github.com/thel5coder/pkg/functioncaller"
 	"github.com/thel5coder/pkg/logruslogger"
 	"github.com/thel5coder/pkg/messages"

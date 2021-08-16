@@ -1,9 +1,9 @@
 package usecases
 
 import (
-	"github.com/ecommerce/product-service/domain/usecase"
-	"github.com/ecommerce/product-service/domain/view_models"
 	"github.com/globalsign/mgo/bson"
+	"github.com/thel5coder/ecommerce/product-service/domain/usecase"
+	"github.com/thel5coder/ecommerce/product-service/domain/view_models"
 	"github.com/thel5coder/pkg/functioncaller"
 	"github.com/thel5coder/pkg/logruslogger"
 	"github.com/thel5coder/pkg/minio"

@@ -1,8 +1,8 @@
 package usecase
 
 import (
-	"github.com/ecommerce/product-service/domain/requests"
-	"github.com/ecommerce/product-service/domain/view_models"
+	"github.com/thel5coder/ecommerce/product-service/domain/requests"
+	"github.com/thel5coder/ecommerce/product-service/domain/view_models"
 )
 
 type IProductUseCase interface {

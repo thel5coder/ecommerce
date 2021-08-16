@@ -1,7 +1,7 @@
 package usecase
 
 import (
-	"github.com/ecommerce/product-service/domain/view_models"
+	"github.com/thel5coder/ecommerce/product-service/domain/view_models"
 	"mime/multipart"
 )
 

@@ -1,8 +1,8 @@
 package commands
 
 import (
-	"github.com/ecommerce/product-service/domain/commands"
-	"github.com/ecommerce/product-service/domain/models"
+	"github.com/thel5coder/ecommerce/product-service/domain/commands"
+	"github.com/thel5coder/ecommerce/product-service/domain/models"
 	"github.com/thel5coder/pkg/postgresql"
 )
 
