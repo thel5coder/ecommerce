@@ -2,12 +2,12 @@ package usecases
 
 import (
 	"database/sql"
-	"github.com/ecommerce/transaction-service/domain/models"
-	"github.com/ecommerce/transaction-service/domain/requests"
-	"github.com/ecommerce/transaction-service/domain/usecases"
-	"github.com/ecommerce/transaction-service/domain/view_models"
-	"github.com/ecommerce/transaction-service/repository/commands"
-	"github.com/ecommerce/transaction-service/repository/queries"
+	"github.com/thel5coder/ecommerce/transaction-service/domain/models"
+	"github.com/thel5coder/ecommerce/transaction-service/domain/requests"
+	"github.com/thel5coder/ecommerce/transaction-service/domain/usecases"
+	"github.com/thel5coder/ecommerce/transaction-service/domain/view_models"
+	"github.com/thel5coder/ecommerce/transaction-service/repository/commands"
+	"github.com/thel5coder/ecommerce/transaction-service/repository/queries"
 	"github.com/thel5coder/pkg/functioncaller"
 	"github.com/thel5coder/pkg/logruslogger"
 	"time"

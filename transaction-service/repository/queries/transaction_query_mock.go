@@ -3,7 +3,7 @@ package queries
 import (
 	"database/sql"
 	"fmt"
-	"github.com/ecommerce-service/transaction-service/domain/models"
+	"github.com/thel5coder/ecommerce/transaction-service/domain/models"
 	"strings"
 )
 

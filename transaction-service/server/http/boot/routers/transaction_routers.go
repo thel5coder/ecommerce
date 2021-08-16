@@ -1,9 +1,9 @@
 package routers
 
 import (
-	"github.com/ecommerce-service/transaction-service/server/http/handlers"
-	"github.com/ecommerce-service/transaction-service/server/http/middlewares"
 	"github.com/gofiber/fiber/v2"
+	"github.com/thel5coder/ecommerce/transaction-service/server/http/handlers"
+	"github.com/thel5coder/ecommerce/transaction-service/server/http/middlewares"
 )
 
 type TransactionRoutes struct {

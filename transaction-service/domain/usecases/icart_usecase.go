@@ -1,8 +1,8 @@
 package usecases
 
 import (
-	"github.com/ecommerce/transaction-service/domain/requests"
-	"github.com/ecommerce/transaction-service/domain/view_models"
+	"github.com/thel5coder/ecommerce/transaction-service/domain/requests"
+	"github.com/thel5coder/ecommerce/transaction-service/domain/view_models"
 )
 
 type ICartUseCase interface {

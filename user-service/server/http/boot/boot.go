@@ -1,8 +1,8 @@
 package boot
 
 import (
-	"github.com/ecommerce/user-service/domain/configs"
 	"github.com/gofiber/fiber/v2"
+	"github.com/thel5coder/ecommerce/user-service/domain/configs"
 )
 
 type Boot struct {

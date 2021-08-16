@@ -1,8 +1,8 @@
 package usecases
 
 import (
-	"github.com/ecommerce/user-service/domain/configs"
-	"github.com/ecommerce/user-service/domain/view_models"
+	"github.com/thel5coder/ecommerce/user-service/domain/configs"
+	"github.com/thel5coder/ecommerce/user-service/domain/view_models"
 )
 
 type UseCaseContract struct {

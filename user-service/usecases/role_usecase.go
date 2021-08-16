@@ -1,9 +1,9 @@
 package usecases
 
 import (
-	"github.com/ecommerce/user-service/domain/usecase"
-	"github.com/ecommerce/user-service/domain/view_models"
-	"github.com/ecommerce/user-service/repository/queries"
+	"github.com/thel5coder/ecommerce/user-service/domain/usecase"
+	"github.com/thel5coder/ecommerce/user-service/domain/view_models"
+	"github.com/thel5coder/ecommerce/user-service/repository/queries"
 	"github.com/thel5coder/pkg/functioncaller"
 	"github.com/thel5coder/pkg/logruslogger"
 )

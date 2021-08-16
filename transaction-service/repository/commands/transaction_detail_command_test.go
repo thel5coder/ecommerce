@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/brianvoe/gofakeit/v6"
-	"github.com/ecommerce-service/transaction-service/domain/models"
 	"github.com/stretchr/testify/assert"
+	"github.com/thel5coder/ecommerce/transaction-service/domain/models"
 	"testing"
 	"time"
 )

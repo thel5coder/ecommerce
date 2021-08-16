@@ -1,7 +1,7 @@
 package view_models
 
 import (
-	"github.com/ecommerce/user-service/domain/models"
+	"github.com/thel5coder/ecommerce/user-service/domain/models"
 	"time"
 )
 

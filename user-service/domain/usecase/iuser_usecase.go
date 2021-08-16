@@ -1,8 +1,8 @@
 package usecase
 
 import (
-	"github.com/ecommerce/user-service/domain/requests"
-	"github.com/ecommerce/user-service/domain/view_models"
+	"github.com/thel5coder/ecommerce/user-service/domain/requests"
+	"github.com/thel5coder/ecommerce/user-service/domain/view_models"
 )
 
 type IUserUseCase interface {

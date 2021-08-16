@@ -1,9 +1,9 @@
 package routers
 
 import (
-	"github.com/ecommerce/user-service/server/http/handlers"
-	"github.com/ecommerce/user-service/server/http/middlewares"
 	"github.com/gofiber/fiber/v2"
+	"github.com/thel5coder/ecommerce/user-service/server/http/handlers"
+	"github.com/thel5coder/ecommerce/user-service/server/http/middlewares"
 )
 
 type RoleRouters struct{

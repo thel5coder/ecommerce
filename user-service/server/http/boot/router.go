@@ -1,11 +1,11 @@
 package boot
 
 import (
-	"github.com/ecommerce/user-service/server/http/boot/routers"
-	"github.com/ecommerce/user-service/server/http/handlers"
-	"github.com/ecommerce/user-service/usecases"
 	"github.com/gofiber/fiber/v2"
 	"github.com/rs/xid"
+	"github.com/thel5coder/ecommerce/user-service/server/http/boot/routers"
+	"github.com/thel5coder/ecommerce/user-service/server/http/handlers"
+	"github.com/thel5coder/ecommerce/user-service/usecases"
 )
 
 func (boot *Boot) RegisterAllRouters() {

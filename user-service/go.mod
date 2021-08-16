@@ -1,4 +1,4 @@
-module github.com/ecommerce/user-service
+module github.com/thel5coder/ecommerce/user-service
 
 go 1.14
 

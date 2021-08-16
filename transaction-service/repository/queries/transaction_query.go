@@ -2,8 +2,8 @@ package queries
 
 import (
 	"fmt"
-	"github.com/ecommerce/transaction-service/domain/models"
-	"github.com/ecommerce/transaction-service/domain/queries"
+	"github.com/thel5coder/ecommerce/transaction-service/domain/models"
+	"github.com/thel5coder/ecommerce/transaction-service/domain/queries"
 	"github.com/thel5coder/pkg/postgresql"
 	"strings"
 )

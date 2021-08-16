@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"github.com/ecommerce/transaction-service/usecases"
 	"github.com/gofiber/fiber/v2"
+	"github.com/thel5coder/ecommerce/transaction-service/usecases"
 )
 
 type HandlerContract struct {

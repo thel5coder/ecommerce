@@ -1,11 +1,11 @@
 package handlers
 
 import (
-	"github.com/ecommerce/user-service/domain/handlers"
-	"github.com/ecommerce/user-service/domain/requests"
-	"github.com/ecommerce/user-service/usecases"
 	"github.com/go-playground/validator/v10"
 	"github.com/gofiber/fiber/v2"
+	"github.com/thel5coder/ecommerce/user-service/domain/handlers"
+	"github.com/thel5coder/ecommerce/user-service/domain/requests"
+	"github.com/thel5coder/ecommerce/user-service/usecases"
 	"github.com/thel5coder/pkg/response"
 	"net/http"
 	"strconv"

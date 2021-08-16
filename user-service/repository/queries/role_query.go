@@ -2,8 +2,8 @@ package queries
 
 import (
 	"database/sql"
-	"github.com/ecommerce/user-service/domain/models"
-	"github.com/ecommerce/user-service/domain/queries"
+	"github.com/thel5coder/ecommerce/user-service/domain/models"
+	"github.com/thel5coder/ecommerce/user-service/domain/queries"
 	"strings"
 )
 

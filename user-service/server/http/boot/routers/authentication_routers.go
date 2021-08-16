@@ -1,8 +1,8 @@
 package routers
 
 import (
-	"github.com/ecommerce/user-service/server/http/handlers"
 	"github.com/gofiber/fiber/v2"
+	"github.com/thel5coder/ecommerce/user-service/server/http/handlers"
 )
 
 type AuthenticationRouters struct {
